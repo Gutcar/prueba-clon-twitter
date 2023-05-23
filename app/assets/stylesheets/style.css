@@ -17,8 +17,8 @@
     font-weight: 700;
     font-size: 25px;
 }
-.nav-costado li:first-child {
-    color: #ffc107;
+.logo {
+    color: #ffc107 !important;
     font-size: 50px;
 }
 
