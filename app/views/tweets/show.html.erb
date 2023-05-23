@@ -1,10 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
+<header class="py-5 px-3 bordes-costados">
+  <h1 class="fw-bold">Tweet</h1>
+</header>
+
 <%= render @tweet %>
 
-<div>
-  <%= link_to "Edit this tweet", edit_tweet_path(@tweet) %> |
-  <%= link_to "Back to tweets", tweets_path %>
+<div class="bordes-costados d-flex justify-content-end pe-3 pb-3">
+  <%= link_to "Editar", edit_tweet_path(@tweet), class: "btn btn-outline-warning me-2" %>
 
-  <%= button_to "Destroy this tweet", @tweet, method: :delete %>
+  <%= button_to "Borrar", @tweet, method: :delete, class: "btn btn-outline-danger" %>
 </div>
+
+<div class="d-flex justify-content-center my-5">
+  <%= link_to "Volver a Twitts", tweets_path, class: "btn btn-warning" %>
+</div>
+

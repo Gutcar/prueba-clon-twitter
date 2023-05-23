@@ -1,9 +1,11 @@
-<h1>New tweet</h1>
+<header class="py-5 px-3 bordes-costados">
+  <h1 class="fw-bold">Nuevo Tweet</h1>
+</header>
 
-<%= render "form", tweet: @tweet %>
+<div class="bordes-costados p-3">
+  <%= render "form", tweet: @tweet %>
+</div>
 
-<br>
-
-<div>
-  <%= link_to "Back to tweets", tweets_path %>
+<div class="d-flex justify-content-center my-5">
+  <%= link_to "Volver a Twitts", tweets_path, class: "btn btn-warning" %>
 </div>

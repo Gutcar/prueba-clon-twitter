@@ -1,10 +1,13 @@
-<h1>Editing tweet</h1>
+<header class="py-5 px-3 bordes-costados">
+  <h1 class="fw-bold">Editar Tweet</h1>
+</header>
 
-<%= render "form", tweet: @tweet %>
-
-<br>
-
-<div>
-  <%= link_to "Show this tweet", @tweet %> |
-  <%= link_to "Back to tweets", tweets_path %>
+<div class="bordes-costados p-3">
+  <%= render "form", tweet: @tweet %>
 </div>
+
+<div class="d-flex justify-content-center my-5">
+  <%= link_to "Mostrar Tweet", @tweet, class: "btn btn-outline-warning me-2" %>
+  <%= link_to "Volver a Twitts", tweets_path, class: "btn btn-warning" %>
+</div>
+

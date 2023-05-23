@@ -12,16 +12,16 @@
   <% end %>
 
   <div>
-    <%= form.label :user_name, style: "display: block" %>
-    <%= form.text_field :user_name %>
+    <%= form.label :user_name, "Nombre usuario", class: "form-label" %>
+    <%= form.text_field :user_name,  class: "form-control" %>
   </div>
 
   <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+    <%= form.label :description, "Descripción", class: "form-label mt-2" %>
+    <%= form.text_field :description, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="mt-2" >
+    <%= form.submit "Guardar", class: "btn btn-warning" %>
   </div>
 <% end %>
