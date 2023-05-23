@@ -9,5 +9,5 @@ class ApplicationController < ActionController::Base
     # Better user experience handled automatically
     Pagy::DEFAULT[:overflow] = :last_page
 
-    #Pagy::I18n.load(locale: 'en', filepath: 'config/locales/pagy_custom.yml')
+    Pagy::I18n.load(locale: 'en', filepath: 'config/locales/pagy_custom.yml')
 end
