@@ -5,5 +5,12 @@ class Tweet < ApplicationRecord
     against: {
         user_name: "A",
         description: "B"
+    }, 
+    using: {
+        tsearch: {
+            prefix: true,      # Coincidencias de prefijo
+            any_word: true,    # Coincidencias intermedias
+            dictionary: "spanish"  # Diccionario para búsqueda en español (opcional, reemplaza "spanish" según necesites)
+        }
     }
 end
