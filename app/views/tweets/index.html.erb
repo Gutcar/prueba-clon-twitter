@@ -1,16 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Tweets</h1>
+<header class="py-5 px-3 bordes-costados">
+  <h1 class="fw-bold">Tweets</h1>
+</header>
+
 
 <div id="tweets">
   <% @tweets.each do |tweet| %>
-    <%= render tweet %>
-    <p>
-      <%= link_to "Show this tweet", tweet %>
-    </p>
+    <div class="borde-top">
+      <%= link_to tweet, class: "nav-link link-hover" do %>
+        <%= render tweet %>
+      <% end %>
+    </div> 
   <% end %>
 </div>
 
-<%== pagy_bootstrap_nav(@pagy)  if @pagy.pages > 1 %>
+<div class="d-flex justify-content-center mt-5">
+  <%== pagy_bootstrap_nav(@pagy)  if @pagy.pages > 1 %>
+</div>
 
-<%= link_to "New tweet", new_tweet_path %>
+
+

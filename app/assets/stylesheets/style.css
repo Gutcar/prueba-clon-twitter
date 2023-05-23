@@ -8,3 +8,32 @@
 .page-link:hover {
     color: #ffc107 !important;
 }
+
+.nav-costado {
+    list-style: none;
+    
+}
+.nav-costado:last-child{
+    font-weight: 700;
+    font-size: 25px;
+}
+.nav-costado li:first-child {
+    color: #ffc107;
+    font-size: 50px;
+}
+
+.bordes-costados {
+    border-left: 1px solid rgb(139, 139, 139);
+    border-right: 1px solid rgb(139, 139, 139);
+}
+.borde-top {
+    border-top: 1px solid rgb(139, 139, 139);
+}
+
+.link-hover:hover {
+    background-color: #ebebeb;
+}
+
+.font-20 {
+    font-size: 20px;
+}

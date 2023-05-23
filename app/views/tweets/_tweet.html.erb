@@ -1,11 +1,10 @@
-<div id="<%= dom_id tweet %>">
-  <p>
-    <strong>User name:</strong>
-    <%= tweet.user_name %>
+<div id="<%= dom_id tweet %>" class="bordes-costados p-3">
+  <p class="font-20">
+    <i class="fa-solid fa-user text-warning"></i>
+    <strong><%= tweet.user_name %></strong>
   </p>
 
   <p>
-    <strong>Description:</strong>
     <%= tweet.description %>
   </p>
 
